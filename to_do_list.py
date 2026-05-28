@@ -14,8 +14,8 @@ def load_tasks():
 
 def save_tasks(tasks):
     try:
-        with open(file_name, 'w') as file:  # open the file with read  and create as a file
-            json.dump(tasks, file)  # load that file
+        with open(file_name, 'w') as file:  # open the file with write access and create as a file
+            json.dump(tasks, file)  # edit that file
     except:
         # if there is an error, return an empty list of tasks
         print("Failed to save")
